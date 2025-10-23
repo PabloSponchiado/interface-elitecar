@@ -1,0 +1,36 @@
+.conteudo-principal {
+    display: flex;
+    flex-direction: row;
+    background-color: var(--cor-background);
+    height: calc(100vh - 70px);
+}
+
+.ctn-esquerda {
+    width: 50%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.ctn-esquerda img {
+    width: 50%;
+    margin-top: 10%;
+    margin-bottom: 10%;
+}
+
+.ctn-direita {    
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.ctn-direita img{
+    width: 80%;
+}
+
+.ctn-esquerda p {
+    text-align: center;   
+    max-width: 80%;       
+    margin: 0 auto;        
+}
