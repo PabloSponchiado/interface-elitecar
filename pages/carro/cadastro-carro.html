@@ -1,48 +1,52 @@
 <!DOCTYPE html>
-<html lang="pt-br">
-  <head>
+<html lang="pt-BR">
+<head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>EliteCar - Cadastro de Cliente</title>
-    <link rel="stylesheet" href="../../css/cadastro.css" />
+    <title>EliteCar - Cadastro Carro</title>
     <link rel="stylesheet" href="../../css/estilo.css" />
-  </head>
-  <body>
-    <header class="cabecalho">
-      <nav>
+    <link rel="stylesheet" href="../../css/cadastro.css" />
+</head>
+<body>
+<header class="cabecalho">
+    <nav>
         <a href="/index.html">INÍCIO</a>
         <a href="/pages/cliente/lista-clientes.html">CLIENTES</a>
         <a href="/pages/carro/lista-carros.html">CARROS</a>
         <a href="/pages/pedido/lista-pedidos.html">PEDIDOS</a>
-      </nav>
-    </header>
+    </nav>
+</header>
 
-    <main class="conteudo-principal">
-      <div class="ctn-titulo">
-        <h1>CADASTRO DE CARRO</h1>
-      </div>
-      <div class="ctn-formulario">
-        <form action="" method="post">
-            <label for="marca-carro">
-                Marca
-                <input type="text"   name="marca-carro"   id="marca-carro"   placeholder="Insira a marca do carro" required />
-            </label>
-         <label for="cpf-cliente">
-                Modelo
-                <input type="number" name="modelo-carro"    id="modelo-carro"    placeholder="Insira o modelo do carro" required />
-         </label>
-        <label for="numero-cliente">
-                Ano de Fabricação
-                <input type="number" name="fabricação-carro" id="fabricação-carro" placeholder="Insira o ano de fabricação" required />
-            </label>
-        <label for="numero-cliente">
-                Cor
-                <input type="text" name="cor-carro" id="cor-carro" placeholder="Insira a cor principal do carro" required />
-            </label>
-            <input type="submit" value="CADASTRAR"> </input>
-        
+<main class="conteudo-principal">
+    <div class="ctn-titulo">
+        <h1>CADASTRO CARRO</h1>
+    </div>
+
+    <div class="div-formulario">
+        <form class="form-cadastro" action="" method="post">
+            <div class="campo-formulario">
+                <label for="marca">Marca</label>
+                <input id="marca" name="marca" type="text" placeholder="Insira a marca do carro" required />
+            </div>
+
+            <div class="campo-formulario">
+                <label for="modelo">Modelo</label>
+                <input id="modelo" name="modelo" type="text" placeholder="Insira o modelo do carro" required />
+            </div>
+
+            <div class="campo-formulario">
+                <label for="ano">Ano</label>
+                <input id="ano" name="ano" type="number" minlength="4" maxlength="4" step="1" placeholder="Insira o ano de fabricação" required />
+            </div>
+
+            <div class="campo-formulario">
+                <label for="cor">Cor</label>
+                <input id="cor" name="cor" type="text" placeholder="Insira a cor principal do carro" required />
+            </div>
+
+            <button class="btn-cadastrar" type="submit">CADASTRAR</button>
         </form>
-      </div>
-    </main>
-  </body>
+    </div>
+</main>
+</body>
 </html>

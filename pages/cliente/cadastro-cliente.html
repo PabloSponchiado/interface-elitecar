@@ -1,11 +1,12 @@
+<!-- ...existing code... -->
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-BR">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>EliteCar - Cadastro de Cliente</title>
-    <link rel="stylesheet" href="../../css/cadastro.css" />
+    <title>EliteCar - Cadastro Cliente</title>
     <link rel="stylesheet" href="../../css/estilo.css" />
+    <link rel="stylesheet" href="../../css/cadastro.css" />
   </head>
   <body>
     <header class="cabecalho">
@@ -19,26 +20,50 @@
 
     <main class="conteudo-principal">
       <div class="ctn-titulo">
-        <h1>CADASTRO DE CLIENTE</h1>
+        <h1>CADASTRO CLIENTE</h1>
       </div>
-      <div class="ctn-formulario">
-        <form action="" method="post">
-            <label for="nome-cliente">
-                Nome 
-                <input type="text"   name="nome-cliente"   id="nome-cliente"   placeholder="Digite seu nome" minlength="3" required />
-            </label>
-         <label for="cpf-cliente">
-                CPF
-                <input type="number" name="cpf-cliente"    id="cpf-cliente"    placeholder="Digite seu CPF" minlength="11" maxlength="11" required/>
-         </label>
-        <label for="numero-cliente">
-                Telefone
-                <input type="number" name="numero-cliente" id="numero-cliente" placeholder="Digite seu telefone" minlength="11" maxlength="11" />
-            </label>
-            <label for="">Campos obrigatórios</label>
 
-            <input type="submit" value="CADASTRAR"> </input>
-        
+      <div class="div-formulario">
+        <form class="form-cadastro" action="" method="post">
+          <div class="campo-formulario">
+            <label for="nome">Nome</label>
+            <input
+              id="nome"
+              name="nome"
+              type="text"
+              placeholder="Nome completo"
+              minlength="3"
+              required
+            />
+          </div>
+
+          <div class="campo-formulario">
+            <label for="cpf">CPF</label>
+            <input
+              id="cpf"
+              name="cpf"
+              type="number"
+              minlength="11"
+              maxlength="11"
+              placeholder="Informe o CPF"
+              required
+            />
+          </div>
+
+          <div class="campo-formulario">
+            <label for="telefone">Telefone</label>
+            <input
+              id="telefone"
+              name="telefone"
+              type="tel"
+              minlength="10"
+              maxlength="10"
+              placeholder="Insira o telefone"
+              required
+            />
+          </div>
+
+          <button class="btn-cadastrar" type="submit">CADASTRAR</button>
         </form>
       </div>
     </main>
